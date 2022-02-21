@@ -1,0 +1,114 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<style type="text/css">
+form{
+
+        box-sizing: border-box;
+        
+      }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e9f1f7;
+}
+h1{
+    text-align: center;
+    color: whitesmoke;
+
+}
+div.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 300px;
+    width: 350px;
+    border-radius: 2%;
+    color: black;
+    padding: 16px;
+
+}
+
+.label{
+
+    
+    color: dimgrey;
+    width: 120px;
+    font-size: 14px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #50a6e6;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 8px;
+
+  
+}
+.reg {
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: dimgrey;
+    text-underline-position: unset;
+
+}
+a {
+  
+  color: #50a6e6;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav{
+    text-align: left;
+    height: 10px;
+    padding-top: 30px;
+    border-bottom: 2px solid lightgrey;
+
+}
+</style>
+</head>
+<body>
+<form action="#">
+    <div class="nav">
+        
+
+    </div>
+    <div class="container">
+       <br> <div style="text-align: center;font-weight: bold;font-size: 22px;color: #7ebce6;">Welcome back</div>
+      <br>
+      <label class="label" for="uname"><b>Username</b><i class="fa fa-envelope"></i></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label class="label" for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button  type="submit">Sign In</button>
+     <!-- <label>
+        <input style="font-family: font-family: Arial, Helvetica, sans-serif; color: dimgrey;" type="checkbox" checked="checked" name="remember"> Remember me
+      </label><span><a href="signup.html">Signup</a></span>-->
+
+    </div>
+    <div class="reg"><a href="signup.html">Register now</a></div>
+</form>
+
+
+</body></html> 

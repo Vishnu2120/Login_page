@@ -1,0 +1,99 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style type="text/css">
+    *{
+        line-height: 28px;
+    }
+form{
+
+        box-sizing: border-box;
+
+        
+      }
+body {
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #e9f1f7;
+}
+h1{
+    text-align: center;
+    color: whitesmoke;
+
+}
+div.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 350px;
+    width: 350px;
+    border-radius: 2%;
+    color: black;
+    padding: 16px;
+
+}
+
+.label{
+
+    background-color: whitesmoke;
+    color: dimgrey;
+    width: 120px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.input-icons i {
+            position: absolute;
+        }
+.icon-rtl {
+  padding-right: 25px;
+  background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat right;
+  background-size: 20px;
+}
+</style>
+</head>
+<body>
+<form action="#">
+    
+    <div class="container input-icons">
+       <span> <i style="font-size:14px" class="fa">&#xf0e0;</i>
+          <input type="text" placeholder="Enter Username" name="uname" required></span>
+
+          <input type="text" class="icon-rtl" value placeholder="Search">
+<i class="fa fa-user icon"></i>
+            <input class="input-field" type="text">
+      
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button  type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label><span><a href="signup.html">Signup</a></span>
+
+    </div>
+</form>
+
+
+</body></html> 

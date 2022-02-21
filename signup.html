@@ -1,0 +1,133 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<style type="text/css">
+form{
+
+        box-sizing: border-box;
+        
+      }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e9f1f7;
+}
+h1{
+    text-align: center;
+    color: whitesmoke;
+
+}
+div.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 520px;
+    width: 350px;
+    border-radius: 2%;
+    color: black;
+    padding: 16px;
+
+}
+
+.label{
+
+    
+    color: dimgrey;
+    width: 120px;
+    font-size: 14px;
+
+}
+.label_agree{
+
+     color: #7ebce6;
+    width: 120px;
+    font-size: 14px;
+}
+.label_login{
+
+     color: dimgrey;
+    width: 120px;
+    font-size: 14px;
+    font-weight: 200;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #50a6e6;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 8px;
+
+  
+}
+
+a {
+  
+  color: #50a6e6;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav{
+    text-align: left;
+    height: 10px;
+    padding-top: 30px;
+    border-bottom: 2px solid lightgrey;
+
+}
+</style>
+</head>
+<body>
+<form action="#">
+     <!--<div class="nav">
+        
+
+    </div>-->
+    <div class="container">
+       <br> <div style="text-align: left;font-weight: bold;font-size: 22px;color: #7ebce6;">Sign up with your email</div>
+       <!--<label class="label_login" >Already have an account Signin</label>
+      <br>-->
+      <br>
+      <label class="label" for="uname"><b>First Name</b><i class="fa fa-envelope"></i></label>
+      <input type="text" placeholder="Enter First name" name="uname" required>
+       <label class="label" for="lname"><b>Last Name</b><i class="fa fa-envelope"></i></label>
+      <input type="text" placeholder="Enter Last name" name="uname" required>
+
+       <label class="label" for="email"><b>Email ID</b><i class="fa fa-envelope"></i></label>
+      <input type="text" placeholder="Enter email" name="uname" required>
+
+
+      <label class="label" for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      
+      <label class="label" for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label class="label_agree">
+        <input style="font-family: font-family: Arial, Helvetica, sans-serif; color: dimgrey;" type="checkbox" name="remember"> <b>I agree to the Terms of Service and Policy</b>
+      </label>
+<br>
+      <button  type="submit">Create account</button>
+     <!-- <label>
+        <input style="font-family: font-family: Arial, Helvetica, sans-serif; color: dimgrey;" type="checkbox" checked="checked" name="remember"> Remember me
+      </label><span><a href="signup.html">Signup</a></span>-->
+
+    </div>
+    
+</form>
+
+
+</body></html> 
