@@ -1,0 +1,217 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Reg Form</title>    
+    <style type="text/css">    
+        body{    
+            font-family: Calibri;   
+            color: slategray; 
+        }    
+        input[type="text"] {    
+            width: 250px;    
+        }    
+        input[type="submit"], input[type="reset"] {    
+            width: 77px;    
+            height: 27px;    
+            position: relative;left: 180px;    
+        }    
+        form{    
+            text-align: center;    
+            font-family: Calibri;    
+            font-size: 20px;    
+            border: 0px solid black;    
+            border-radius: 3px;
+            width: 600px;    
+            margin: 20px auto;   
+            background-color: skyblue; 
+        }    
+        td {    
+            padding: 10px;    
+        }    
+        td:first-child {    
+            text-align: right;    
+            font-weight: bold;    
+        }    
+        td:last-child {    
+            text-align: left;    
+        }
+    </style>    
+    <script>    
+        function validate() {    
+            var fname = document.reg_form.fname;    
+            var getfname =fname.value;            
+            var lname = document.reg_form.lname; 
+            var getlname = lname.value;   
+            var address = document.reg_form.address;    
+            var getaddress = address.value;
+            var gender = document.reg_form.gender;    
+            var getgender = gender.value;
+            var email = document.reg_form.email;    
+            var getemail = email.value;
+            var mobile = document.reg_form.mobile;    
+            var getmobile = mobile.value;
+            var course = document.reg_form.course;    
+            var getcourse = course.value;
+            alert(getfname + getlname + getaddress + getgender + getemail + getmobile + getcourse );
+            if (fname.value.length <= 0) {    
+                //alert("Name is required");    
+                fname.focus();    
+                return false;    
+            }    
+            if (lname.value.length <= 0) {    
+                //alert("Last Name is required");    
+                lname.focus();    
+                return false;    
+            }    
+            if (address.value.length <= 0) {    
+                //alert("Address is required");    
+                address.focus();    
+                return false;    
+            }    
+            if (gender.value.length <= 0) {    
+                //alert("Gender is required");    
+                gender.focus();    
+                return false;    
+            }    
+            if (email.value.length <= 0) {    
+                //alert("Email Id is required");    
+                email.focus();    
+                return false;    
+            }    
+            if (mobile.value.length <= 0) {    
+                //alert("Mobile number is required");    
+                mobile.focus();    
+                return false;    
+            }    
+            if (course.value == "select course") {    
+                //alert("Course is required");    
+                course.focus();    
+                return false;    
+            }    
+            return false;
+            document.getElementById("reg_form").reset();      
+        }    
+        function fn(){
+            document.getElementById("reg_form").reset();  
+            alert("test");
+           /* if (fname.value !== '') {    
+                document.getElementById('fname').value = " "; 
+            }  else{
+                fname.focus();    
+                return false;   
+            }
+            if (lname.value !== '') {    
+                document.getElementById('lname').value = " "; 
+            }  else{
+                lname.focus();    
+                return false;   
+            }
+            if (address.value !== '') {    
+                document.getElementById('address').value = " "; 
+            }  else{
+                address.focus();    
+                return false;   
+            }
+            if (gender.value !== '') {    
+                document.getElementById('gender').value = " "; 
+            }  else{
+                gender.focus();    
+                return false;   
+            }
+            if (email.value !== '') {    
+                document.getElementById('email').value = " "; 
+            }  else{
+                email.focus();    
+                return false;   
+            }
+            if (mobile.value !== '') {    
+                document.getElementById('mobile').value = " "; 
+            }  else{
+                mobile.focus();    
+                return false;   
+            }
+            if (course.value !== '') {    
+                document.getElementById('course').value = " "; 
+            }  else{
+                course.focus();    
+                return false;   
+            }*/
+            /*document.getElementById('fname').value = " ";
+            document.getElementById('lname').value = " ";
+            document.getElementById('address').value = " ";            
+            document.getElementById('gender').value = " ";
+            document.getElementById('email').value = " ";
+            document.getElementById('mobile').value = " ";
+            document.getElementById('course').value = " ";
+            
+            
+            */
+            
+        }
+    </script>    
+</head>    
+<body>    
+    <center><h1>Registration Form</h1></center>    
+    <hr>    
+    <form method="" action="" name="reg_form" onsubmit="return validate()">    
+          
+        <table>    
+            <tr>    
+                <td><label>First Name: </label></td>    
+                <td>    
+                    <input type="text" id="fname" name="fname" placeholder="First Name" required>    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Last Name: </label></td>    
+                <td>    
+                    <input type="text" id="lname" name="lname" placeholder="Last Name" required>    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Address: </label></td>    
+                <td>    
+                    <input type="textarea" id="address" size="50" name="address" placeholder="Address" required>    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Gender: </label></td>    
+                <td>    
+                    <input type="radio" id="gender" name="gender" value="male" required>Male    
+                    <input type="radio" id="gender" name="gender" value="femele" required>Female    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Email Id: </label></td>    
+                <td>    
+                    <input type="text" id="email" name="email" placeholder="example@gmail.com" required>    
+                </td>    
+            </tr>    
+            <tr>    
+                <td><label>Mobile: </label></td>    
+                <td>    
+                    <input type="number" id="mobile" name="mobile" required>    
+                </td>    
+            </tr>    
+            <tr>    
+            <td><label>Course: </label></td>    
+                <td>    
+                    <select name="course" required>    
+                        <option value="select course">select course</option>    
+                        <option value="HTML">HTML</option>    
+                        <option value="CSS">CSS</option>    
+                        <option value="JavaScript">JAVASCRIPT</option>    
+                        <option value="Java">JAVA</option>    
+                    </select>    
+                </td>    
+            </tr>    
+            <tr>    
+                <td>    
+                    <input type="submit" name="submit" onclick="fn();" value="Submit">    
+                    <input type="reset" name="reset" value="Reset">    
+                </td>    
+            </tr>             
+        </table>    
+    </form>    
+</body>    
+</html>     
